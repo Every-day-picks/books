@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trained Eye | Professional Photography Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-black: #000000;
+            --brand-white: #ffffff;
+            --brand-gray: #f4f4f4;
+            --accent: #888888;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--brand-white);
+            color: var(--brand-black);
+            line-height: 1.6;
+        }
+
+        /* Top Navigation */
+        nav {
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-family: 'Syncopate', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .nav-link-main {
+            text-decoration: none;
+            color: var(--brand-black);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            border: 1px solid var(--brand-black);
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        .nav-link-main:hover {
+            background: var(--brand-black);
+            color: var(--brand-white);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        /* Product Showcase Layout */
+        .product-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .product-image-box {
+            position: relative;
+            background: var(--brand-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .product-image-box img {
+            width: 100%;
+            display: block;
+            filter: grayscale(20%);
+        }
+
+        .product-image-box:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .product-info h1 {
+            font-family: 'Syncopate', sans-serif;
+            font-size: 2.8rem;
+            margin: 0 0 20px 0;
+            line-height: 1.1;
+        }
+
+        .tagline {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 35px;
+        }
+
+        /* Buy Button */
+        .buy-now-btn {
+            display: inline-block;
+            background: var(--brand-black);
+            color: var(--brand-white);
+            text-decoration: none;
+            padding: 22px 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .buy-now-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+            background: #333;
+        }
+
+        /* Value Props */
+        .perks {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 50px;
+        }
+
+        .perk-item h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .perk-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 80px 0 40px;
+            font-size: 0.8rem;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 850px) {
+            .product-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .product-info h1 {
+                font-size: 2rem;
+            }
+            .perks {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">EVERY DAY PICKS</div>
+        <a href="https://every-day-picks.github.io/All-picks/" class="nav-link-main">Explore All Products</a>
+    </nav>
+
+    <div class="container">
+        <section class="product-section">
+            <div class="product-image-box">
+                <img src="images/085E00DN.png" alt="The Trained Eye Course Preview">
+            </div>
+
+            <div class="product-info">
+                <span class="tagline">The Masterclass</span>
+                <h1>The Trained Eye Program</h1>
+                <p class="description">
+                    Recalibrate your creative vision. A comprehensive system designed for those who want to master high-end photography, composition, and a profitable visual business model.
+                </p>
+                
+                <a href="https://www.denisbel.com/the-trained-eye-program#aff=Everyday-picks" class="buy-now-btn">To Buy Now</a>
+            </div>
+        </section>
+
+        <section class="perks">
+            <div class="perk-item">
+                <h3>Visual Composition</h3>
+                <p>Master the geometry and psychology behind every world-class image.</p>
+            </div>
+            <div class="perk-item">
+                <h3>Professional Flow</h3>
+                <p>Unlock Denis Bel's personal editing and client acquisition frameworks.</p>
+            </div>
+            <div class="perk-item">
+                <h3>Global Access</h3>
+                <p>Lifetime access to the curriculum and private community of visual artists.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Everyday Picks | Authorized Affiliate Partner</p>
+    </footer>
+
+</body>
+</html>
